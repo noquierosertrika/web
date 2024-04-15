@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>Tarea para no ser trika</title>
+<h>
+    <meta charset="UTF-8">
+     CALCULADORA PARA NO SER TRIKA
+    <link rel="stylesheet" href="style.css">
+</h>
+<body style="color:rgb(0, 0, 0)" style="font-size: xx-large;">
+
+<p>Por favor, úsame</p>
+<label>Número a : </label>
+<input id="number1" type="number" style="font-size: xx-large;"><br><br>
+<label>Número b : </label>
+<input id="number2" type="number" style="font-size: xx-large;"><br><br>
+<button onclick="suma()" style="font-size: xx-large;">a+b</button>
+<button onclick="division1()" style="font-size: xx-large;">a/b</button>
+<button onclick="division2()" style="font-size: xx-large;">b/a</button>
+<button onclick="producto()" style="font-size: xx-large;">a*b</button>
+<button onclick="resta1()" style="font-size: xx-large;">a-b</button>
+<button onclick="resta2()" style="font-size: xx-large;">b-a</button>
+<button onclick="raiz1()" style="font-size: xx-large;">√a</button>
+<button onclick="raiz2()" style="font-size: xx-large;">√b</button>
+<p id="demo1"></p>
+<p>Profe, para cuándo veo mi 20 de la pc en</p><a href="https://www.academico.uni.edu.pe/alumno/entra" target="_blank">ORCE</a>
+
+<script>
+function suma(){
+    a = document.getElementById("number1").value;
+    b = document.getElementById("number2").value;
+    document.getElementById("demo1").innerHTML = Number(a) + Number(b);
+}
+function division1(){
+    a = document.getElementById("number1").value;
+    b = document.getElementById("number2").value;
+    document.getElementById("demo1").innerHTML = Number(a)/Number(b);
+}
+function producto(){
+    a = document.getElementById("number1").value;
+    b = document.getElementById("number2").value;
+    document.getElementById("demo1").innerHTML = Number(a)*Number(b);
+}
+function resta1(){
+    a = document.getElementById("number1").value;
+    b = document.getElementById("number2").value;
+    document.getElementById("demo1").innerHTML = Number(a)-Number(b);
+}
+function resta2(){
+    a = document.getElementById("number1").value;
+    b = document.getElementById("number2").value;
+    document.getElementById("demo1").innerHTML = Number(b)-Number(a);
+}
+function raiz1(){
+    a = document.getElementById("number1").value;
+    document.getElementById("demo1").innerHTML = Math.sqrt(Number(a));
+}
+function raiz2(){
+    b = document.getElementById("number2").value;
+    document.getElementById("demo1").innerHTML = Math.sqrt(Number(b));
+}
+function division2(){
+    a = document.getElementById("number1").value;
+    b = document.getElementById("number2").value;
+    document.getElementById("demo1").innerHTML = Number(b)/Number(a);
+}
+</script>
+
+</body></html>
